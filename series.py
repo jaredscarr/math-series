@@ -9,5 +9,5 @@ def fibonacci(n):
         total = num1
         num1 = num2
         num2 = total + num2
-    print(num2)
     return num2
+

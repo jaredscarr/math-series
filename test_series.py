@@ -8,6 +8,12 @@ FIB_NUMS = [
     (2, 2),
 ]
 
+LUCAS = [
+    (0, 2),
+    (1, 1),
+    (2, 3),
+]
+
 
 @pytest.mark.parametrize('n, result', FIB_NUMS)
 def test_fibonacci(n, result):
@@ -15,3 +21,8 @@ def test_fibonacci(n, result):
     from series import fibonacci
     assert fibonacci(n) == result
 
+
+def test_lucas_nums(n, result):
+    """Test lucas method."""
+    from series import lucas
+    assert lucas(n) == result
