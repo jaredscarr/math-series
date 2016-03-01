@@ -3,9 +3,9 @@ import pytest
 
 
 FIB_NUMS = [
-    (0, 1),
+    (0, 0),
     (1, 1),
-    (2, 2),
+    (2, 1),
 ]
 
 LUCAS = [
@@ -22,6 +22,7 @@ def test_fibonacci(n, result):
     assert fibonacci(n) == result
 
 
+@pytest.mark.parametrize('n, result', LUCAS)
 def test_lucas_nums(n, result):
     """Test lucas method."""
     from series import lucas
