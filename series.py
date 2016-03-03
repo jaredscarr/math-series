@@ -36,10 +36,12 @@ def sum_series(n, num1=0, num2=1):
 
 if __name__ == "__main__":
     """This module defines functions that implement mathematical series."""
-    print("This module defines functions that implement mathematical series.")
-    print("The fibonacci method returns the nth number in the sequence")
-    print("fibonacci(8) is", fibonacci(8))
-    print("The lucus method returns the nth number in the sequence")
-    print("lucas(10) is", lucas(10))
-    print("The sum_series method returns the nth number of two given numbers.")
-    print("sum_series(39, 23, 67) ", sum_series(39, 23, 67))
+    print("This module defines functions that implement mathematical series. "
+          "The fibonacci method returns the nth number in the sequence so "
+          "fibonacci(8) is {}. "
+          "The lucus method returns the nth number in the sequence so "
+          "lucas(10) is {}. "
+          "The sum_series method returns the nth number of two given numbers "
+          "so sum_series(39, 23, 67) is {}.".format(fibonacci(8),
+                                                    lucas(10),
+                                                    sum_series(39, 23, 67)))
